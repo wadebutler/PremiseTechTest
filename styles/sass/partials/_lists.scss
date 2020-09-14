@@ -26,28 +26,70 @@
             color: #171717;
         }
 
+        a {
+            text-decoration: none;
+            color: #171717;
+            border-bottom: 2px solid #1D8751;
+            transition: 0.3s;
+
+            &:hover, &:focus {
+                border-bottom: 2px solid white;
+                color: #1D8751;
+            }
+        }
+
         li {
             padding: .3em 0;
         }
 
         ul {
+            list-style: none;
+            
+            li::before {
+                content: "•";
+                padding-right: .5em;
+                color: #003B4D;
+            }
 
             ul {
-                list-style-type: "-  ";
+                li::before {
+                    content: "-";
+                    padding-right: .5em;
+                    color: #003B4D;
+                }
 
                 ul {
-                    list-style-type: circle;
+                    li::before {
+                        content: "◦";
+                        padding-right: .5em;
+                        color: #003B4D;
+                    }
                 }
             }
         }
 
         ol {
+            list-style: none; 
+            counter-reset: li;
+
+            li::before {
+                content: counter(li)".";
+                color: #003B4D;
+                counter-increment: li;
+                padding-right: .5em;
+            }
 
             ol {
-                list-style-type: lower-alpha;
+                li::before {
+                    content: "a.";
+                    color: #003B4D;
+                }
 
                 ol {
-                    list-style-type: lower-roman;
+                    li::before {
+                        content: "i.";
+                        color: #003B4D;
+                    }
                 }
             }
         }
@@ -60,6 +102,15 @@
             background: white;
             color: #003B4D;
             font-weight: 500;
+            text-transform: uppercase;
+            margin: 2em 1em;
+            transition: 0.3s;
+
+            &:hover, &:focus         {
+                color: white;
+                background: #1D8751;
+                border: 1px solid #1D8751;
+            }
         }
     }
 }
