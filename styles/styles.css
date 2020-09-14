@@ -185,11 +185,26 @@ h2, h3, h4, p, a, li, button, img {
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 46%;
+  }
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
   line-height: 36px;
-  font-size: 62.5%;
 }
 
 img {
@@ -198,7 +213,7 @@ img {
 
 h2 {
   font-family: 'Lora', serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 p, li, h3, h4, a, button {
@@ -206,19 +221,19 @@ p, li, h3, h4, a, button {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 p, li, h4 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 
 button {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 span a {
-  font-size: 1.313rem;
+  font-size: 2.1rem;
 }
 
 h2, h3, h4, a, button, li::before {
@@ -252,13 +267,37 @@ header {
           justify-content: space-between;
 }
 
+@media (max-width: 1220px) {
+  .lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .lists .lists__title {
   width: 305px;
   font-weight: 400;
 }
 
+@media (max-width: 1220px) {
+  .lists .lists__title {
+    margin-bottom: 1em;
+  }
+}
+
 .lists .lists__content {
   width: 721px;
+}
+
+@media (max-width: 750px) {
+  .lists .lists__content {
+    width: 95%;
+  }
 }
 
 .lists .lists__content h3 {
