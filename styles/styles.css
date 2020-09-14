@@ -179,6 +179,105 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-h1 {
-  color: red;
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  line-height: 36px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  border-bottom: 3px solid black;
+  margin-top: 5em;
+  color: #00333C;
+}
+
+.lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lists .lists__title {
+  width: 305px;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #00333C;
+}
+
+.lists .lists__content {
+  width: 721px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lists .lists__content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #003B4D;
+}
+
+.lists .lists__content p, .lists .lists__content li {
+  font-size: 24px;
+  font-weight: 400;
+  color: #171717;
+}
+
+.lists .lists__content li {
+  padding: .3em 0;
+}
+
+.lists .lists__content ul ul {
+  list-style-type: "-  ";
+}
+
+.lists .lists__content ul ul ul {
+  list-style-type: circle;
+}
+
+.lists .lists__content ol ol {
+  list-style-type: lower-alpha;
+}
+
+.lists .lists__content ol ol ol {
+  list-style-type: lower-roman;
+}
+
+.lists .lists__content button {
+  border: 1px solid #85989E;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 1em 2em;
+  background: white;
+  color: #003B4D;
+  font-weight: 500;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5em 0;
+}
+
+.cards .cards__card {
+  border: 1px solid black;
+  width: 521px;
+}
+
+.cards .cards__card div {
+  padding: 2em;
+}
+
+.cards .cards__card div p {
+  padding-bottom: 2em;
 }
