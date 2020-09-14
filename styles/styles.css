@@ -428,6 +428,12 @@ header {
   }
 }
 
+@media (max-width: 570px) {
+  .cards .cards__card {
+    width: 90%;
+  }
+}
+
 .cards .cards__card div {
   padding: 1em 3em;
 }
