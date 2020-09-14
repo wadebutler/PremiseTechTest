@@ -4,37 +4,30 @@
 
     .lists__title {
         width: 305px;
-        font-family: 'Lora', serif;
-        font-size: 40px;
         font-weight: 400;
-        color: #00333C;
     }
 
     .lists__content {
         width: 721px;
-        font-family: 'Roboto', sans-serif;
 
         h3 {
-            font-size: 32px;
             font-weight: 500;
-            color: #003B4D;
+            padding-top: 3em;
         }
 
         p, li {
-            font-size: 24px;
             font-weight: 400;
-            color: #171717;
         }
 
         a {
             text-decoration: none;
             color: #171717;
-            border-bottom: 2px solid #1D8751;
+            border-bottom: 2px solid $accentColor;
             transition: 0.3s;
 
             &:hover, &:focus {
                 border-bottom: 2px solid white;
-                color: #1D8751;
+                color: $accentColor;
             }
         }
 
@@ -43,73 +36,65 @@
         }
 
         ul {
-            list-style: none;
-            
+            padding: 0;
+
             li::before {
                 content: "•";
-                padding-right: .5em;
-                color: #003B4D;
             }
 
             ul {
+                padding-left: 2em;
+
                 li::before {
                     content: "-";
-                    padding-right: .5em;
-                    color: #003B4D;
                 }
 
                 ul {
                     li::before {
                         content: "◦";
-                        padding-right: .5em;
-                        color: #003B4D;
                     }
                 }
             }
         }
 
         ol {
-            list-style: none; 
             counter-reset: li;
+            padding: 0;
 
             li::before {
                 content: counter(li)".";
-                color: #003B4D;
                 counter-increment: li;
-                padding-right: .5em;
             }
 
             ol {
+                padding-left: 3em;
+                
                 li::before {
                     content: "a.";
-                    color: #003B4D;
                 }
 
                 ol {
                     li::before {
                         content: "i.";
-                        color: #003B4D;
                     }
                 }
             }
         }
 
         button {
-            border: 1px solid #85989E;
+            border: 1px solid $borderColor;
             border-radius: 4px;
-            font-size: 16px;
             padding: 1em 2em;
             background: white;
-            color: #003B4D;
             font-weight: 500;
             text-transform: uppercase;
-            margin: 2em 1em;
+            margin: 3em 1em;
             transition: 0.3s;
 
             &:hover, &:focus         {
                 color: white;
-                background: #1D8751;
-                border: 1px solid #1D8751;
+                background: $accentColor;
+                border: 1px solid $accentColor;
             }
         }
     }

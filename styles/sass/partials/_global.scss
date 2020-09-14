@@ -1,0 +1,51 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 36px;
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+}
+
+p, li, h3, h4, a, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, li, h4 {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1rem;
+}
+
+span a {
+    font-size: 1.313rem;
+}
+
+h2, h3, h4, a, button, li::before {
+    color: $titleColor;
+}
+
+p, li {
+    color: $fontColor;
+}
+
+li::before {
+    padding-right: .5em;
+}
+
+ul, ol {
+    list-style: none;
+}
