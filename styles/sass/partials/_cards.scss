@@ -14,7 +14,7 @@
     .cards__card {
         border: 1px solid $borderColor;
         width: 521px;
-        height: 700px;
+        height: 730px;
         
         @media (max-width: 1100px) {
             margin: 0 auto;
@@ -27,7 +27,6 @@
         
         div {
             padding: 1em 3em;
-            size: 24px;
 
             h4 {
                 font-weight: 700;
