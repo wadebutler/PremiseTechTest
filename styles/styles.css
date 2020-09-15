@@ -438,7 +438,7 @@ header {
   padding-top: 70%;
 }
 
-.cards .cards__card:hover .bonus {
+.cards .cards__card:hover .bonus, .cards .cards__card:focus .bonus {
   opacity: 1;
 }
 
